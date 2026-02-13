@@ -22,12 +22,6 @@ Built with:
     repository      → Database access  
     config          → Configuration & DB connection  
 
-Withdraw operation is concurrency-safe using:
-
--   Database transaction
--   `SELECT ... FOR UPDATE`
--   Row-level locking
-
 ------------------------------------------------------------------------
 
 ## Requirements
@@ -49,7 +43,7 @@ Optional: - curl - Postman
 ### 1. Clone Repository
 
 ``` bash
-git clone <your-repository-url>
+git clone https://github.com/keyvnchristian/wallet-mampu-be.git
 cd wallet-service
 ```
 
@@ -144,7 +138,7 @@ go mod tidy
 Run the server:
 
 ``` bash
-go run cmd/api/main.go
+go run main.go
 ```
 
 Server will start at:
